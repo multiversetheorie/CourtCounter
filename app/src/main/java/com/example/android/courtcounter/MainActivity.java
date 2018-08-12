@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    int scoreTeamA = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,24 +26,24 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the "+3 points" button is clicked.
      */
-    public void threepointer(View view) {
-        int quantity = 3;
-        displayForTeamA(quantity);
+    public void threePointsForTeamA(View view) {
+        scoreTeamA = scoreTeamA + 3;
+        displayForTeamA(scoreTeamA);
     }
 
     /**
      * This method is called when the "+2 points" button is clicked.
      */
-    public void twopointer(View view) {
-        int quantity = 2;
-        displayForTeamA(quantity);
+    public void twoPointsForTeamA(View view) {
+        scoreTeamA = scoreTeamA + 2;
+        displayForTeamA(scoreTeamA);
     }
 
     /**
-     * This method is called when the "+3 points" button is clicked.
+     * This method is called when the "Free Throw" button is clicked.
      */
-    public void freethrow(View view) {
-        int quantity = 1;
-        displayForTeamA(quantity);
+    public void freeThrowForTeamA(View view) {
+        scoreTeamA = scoreTeamA + 1;
+        displayForTeamA(scoreTeamA);
     }
 }
