@@ -27,7 +27,8 @@
         android:layout_marginBottom="8dp"
         android:textAllCaps="true"
         android:layout_gravity="center_horizontal"
-        android:text="+3 points"/>
+        android:text="+3 points"
+        android:onClick="threepointer"/>
 
     <Button
         android:layout_width="match_parent"
@@ -35,7 +36,8 @@
         android:layout_marginBottom="8dp"
         android:textAllCaps="true"
         android:layout_gravity="center_horizontal"
-        android:text="+2 point"/>
+        android:text="+2 point"
+        android:onClick="twopointer"/>
 
     <Button
         android:layout_width="match_parent"
@@ -43,5 +45,6 @@
         android:layout_marginBottom="8dp"
         android:textAllCaps="true"
         android:layout_gravity="center_horizontal"
-        android:text="Free Throw"/>
+        android:text="Free Throw"
+        android:onClick="freethrow"/>
 </LinearLayout>
